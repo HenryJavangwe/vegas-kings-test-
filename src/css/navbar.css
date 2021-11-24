@@ -1,0 +1,38 @@
+.CustomNav {
+    background-color: #5dcbd3;
+}
+.navbar-dark .navbar-nav .nav-link {
+    margin-right: auto;
+    padding: 3px 8px;
+    margin-left: 2px;
+    text-align: start;
+    color: #222;
+    border-radius: 22.5px;
+    font-size: 0.8em;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    margin-right: auto;
+    padding: 3px 8px;
+    margin-left: 2px;
+    text-align: start;
+    color: rgba(53, 47, 47, 0.878);
+    border-radius: 22.5px;
+    font-size: 0.8em;
+}
+
+svg {
+    height: 16px;
+    width: 16px;
+    margin-right: 5px;
+    color: #222;
+}
+
+.nav-link {
+    background-color: #ffffff;
+    color: #222;
+}
+
+.logo-img {
+    width: 60px;
+}
