@@ -1,5 +1,7 @@
 .CustomNav {
-    background-color: #5dcbd3;
+    background-color: #5dcbd300;
+    position: absolute;
+    width: 100%;
 }
 .navbar-dark .navbar-nav .nav-link {
     margin-right: auto;

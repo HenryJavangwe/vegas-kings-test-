@@ -3,6 +3,7 @@ import { Navbar, Container, Nav, NavDropdown } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../css/navbar.css';
 import logo from '../logo_stroked.png';
+import logo2 from '../logo2.png';
 
 function NavbarComponent() {
     return (
@@ -43,6 +44,7 @@ function NavbarComponent() {
                         </Nav.Item>
                     </Nav>
                     </Navbar.Collapse>
+                    <Navbar.Brand className=" justify-content-end" href="#home"> <img src={logo2}  alt="logo" className="logo-img"/> </Navbar.Brand>
                 </Container>
             </Navbar>
         </div>
