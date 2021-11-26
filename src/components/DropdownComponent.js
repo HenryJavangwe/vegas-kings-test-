@@ -1,19 +1,18 @@
-import React from 'react'
+import React, { useState }  from 'react';
 
-function DropdownComponent() {
-
-  const data = [
-    {Team: 1, name: " Team 1"}, 
-    {Team: 2, name: " Team 2"}, 
-    {Team: 3, name: " Team 3"}, 
-    {Team: 4, name: " Team 4"}
-  ];
+function DropdownComponent(props) {
   
+  const [selectedValue, setSelectedValue ] =  useState("");
+
   return (
     <div>
-      <select >
-        {data.map((item, idx)=> <option key={item.idx} value={item.Team}>{item.name}</option>)}
+      <select value={selectedValue} onChange={e => setSelectedValue(e.target.value)}>
+        {props.options.map((item, idx)=> <option key={idx} value={item.attributes.event_title}>{item.attributes.event_title}</option>)}
       </select>
+      <br/>
+      <p>
+        {selectedValue}
+      </p>
     </div>
   )
 }
