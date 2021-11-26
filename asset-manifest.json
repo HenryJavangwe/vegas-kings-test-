@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/vegas-kings-test/static/css/main.e76f8428.chunk.css",
+    "main.js": "/vegas-kings-test/static/js/main.bae4f77a.chunk.js",
+    "main.js.map": "/vegas-kings-test/static/js/main.bae4f77a.chunk.js.map",
+    "runtime-main.js": "/vegas-kings-test/static/js/runtime-main.4be21131.js",
+    "runtime-main.js.map": "/vegas-kings-test/static/js/runtime-main.4be21131.js.map",
+    "static/css/2.383c0125.chunk.css": "/vegas-kings-test/static/css/2.383c0125.chunk.css",
+    "static/js/2.6a35293b.chunk.js": "/vegas-kings-test/static/js/2.6a35293b.chunk.js",
+    "static/js/2.6a35293b.chunk.js.map": "/vegas-kings-test/static/js/2.6a35293b.chunk.js.map",
+    "index.html": "/vegas-kings-test/index.html",
+    "static/css/2.383c0125.chunk.css.map": "/vegas-kings-test/static/css/2.383c0125.chunk.css.map",
+    "static/css/main.e76f8428.chunk.css.map": "/vegas-kings-test/static/css/main.e76f8428.chunk.css.map",
+    "static/js/2.6a35293b.chunk.js.LICENSE.txt": "/vegas-kings-test/static/js/2.6a35293b.chunk.js.LICENSE.txt",
+    "static/media/american-football.4cbb712c.png": "/vegas-kings-test/static/media/american-football.4cbb712c.png",
+    "static/media/logo_stroked.8bf3a34b.png": "/vegas-kings-test/static/media/logo_stroked.8bf3a34b.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4be21131.js",
+    "static/css/2.383c0125.chunk.css",
+    "static/js/2.6a35293b.chunk.js",
+    "static/css/main.e76f8428.chunk.css",
+    "static/js/main.bae4f77a.chunk.js"
+  ]
+}
