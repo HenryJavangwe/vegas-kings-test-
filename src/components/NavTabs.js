@@ -5,30 +5,23 @@ import Dropdown from './DropdownComponent';
 import axios from 'axios';
 
 function NavTabs() { 
-    const [teams, setTeams] = useState ([]);
+    const [odds, setOdds] = useState ([]);
     const {REACT_APP_API_KEY } = process.env;
     useEffect(() => {
         // GET request using axios inside useEffect React hook
         axios.get(`https://api.quarter4.io/search/v2/stream?filter%5Binjuries%5D=0&filter%5Bevent_predictions%5D=1&filter%5Bplayer_predictions%5D=0&filter%5Bdiamonds%5D=0&filter%5Bhottest%5D=0&api_key=${REACT_APP_API_KEY}`)
         .then((response)=>{
+            // axios returns API response body in .data
             // const teamsData = response.data.data;
             // console.log(teamsData)
-            setTeams(response.data.data)
-            // axios returns API response body in .data
+            setOdds(response.data.data)
           })
         // empty dependency array means this effect will only run once (like componentDidMount in classes)
     }, [REACT_APP_API_KEY]);
 
-    // const data = [
-    //     {Team: 1, name: " Team 1"}, 
-    //     {Team: 2, name: " Team 2"}, 
-    //     {Team: 3, name: " Team 3"}, 
-    //     {Team: 4, name: " Team 4"}
-    //   ];
-
     return (
         <div>
-            <Container>
+            <Container className="pb-5">
                 <Tabs defaultActiveKey="profile" id="uncontrolled-tab-example" className="m-0">
                     <Tab eventKey="Forecasts" title="Home">
                         Forecasts
@@ -41,10 +34,7 @@ function NavTabs() {
                     </Tab>
                     <Tab eventKey="Odds & Markets" title="Odds&Markets" >
                         Odds & Markets
-                        <Dropdown options={teams}/>
-                        <div>
-                            {/* <p>{teams === null ? 'loading' : teams}</p> */}
-                        </div>
+                        <Dropdown options={odds}/>
                     </Tab>
                 </Tabs>
             </Container>
