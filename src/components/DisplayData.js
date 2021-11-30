@@ -1,7 +1,6 @@
 import React from 'react'
 import { Table, Container, Row, Col} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Sidebar } from 'semantic-ui-react';
 
 function DisplayData(props) {
     const selectedValue = props.details;
