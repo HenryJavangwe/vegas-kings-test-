@@ -13,7 +13,7 @@ function NavTabs() {
         .then((response)=>{
             // axios returns API response body in .data
             // const teamsData = response.data.data;
-            // console.log(teamsData)
+            // console.log("Data: ", teamsData );
             setOdds(response.data.data)
           })
         // empty dependency array means this effect will only run once (like componentDidMount in classes)
